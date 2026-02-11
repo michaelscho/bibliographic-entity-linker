@@ -1,0 +1,268 @@
+[
+    {
+    "id": "b9a125de-285d-5e69-aea9-64f38f308b67/t6",
+    "original_xml": "<ITEM>6. Bey Herrn Johann Rudolff Im- Hoff, Buchhändler allhier im Kohlerhoff wohnhaft, seynd nebst anderen Bücheren neu angekammen und um billichen Preiß zu haben: <BIBL><TITLE>Wollings Opus Mago Cabalisticum & Theosophicum</TITLE>, teutsch, <YEAR>1735</YEAR></BIBL>. <BIBL><AUTHOR>Joh. Jac. Rumbachs</AUTHOR> <TITLE>Erläuterung über die Praecepta Homiletica</TITLE>, <YEAR>1736</YEAR></BIBL>. <BIBL><TITLE>Betrachtung des Menschen nach Geist Seel und Leib</TITLE><YEAR>1736</YEAR></BIBL></ITEM>",
+    "is_faulty": false,
+    "has_correction": false,
+    "corrected_xml": null,
+    "number_of_fixes": 0,
+    "fix_explanation": null,
+    "json_representation": {
+      "item": {
+        "bibl": [
+          {
+            "title": "Wollings Opus Mago Cabalisticum & Theosophicum",
+            "year": "1735"
+          },
+          {
+            "author": "Joh. Jac. Rumbachs",
+            "title": "Erläuterung über die Praecepta Homiletica",
+            "year": "1736"
+          },
+          {
+            "title": "Betrachtung des Menschen nach Geist Seel und Leib",
+            "year": "1736"
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "quality_xml_well_formed": "TRUE",
+      "quality_error_message": "",
+      "quality_has_overlapping_tags": "FALSE",
+      "quality_tags_used": "AUTHOR, BIBL, ITEM, TITLE, YEAR",
+      "quality_tag_counts": "{'ITEM': 1, 'BIBL': 3, 'TITLE': 3, 'YEAR': 3, 'AUTHOR': 1}",
+      "quality_summary": "OK",
+      "": ""
+    },
+   "VD18 request": [
+    {
+      "Title": "Herrn Georgii von Welling Opus Mago-Cabbalisticum Et Theosophicum",
+      "Author": "Welling, Georg",
+      "Year": "1735.",
+      "Genre": [
+        "Alchemie",
+        "customer__subjectform_Buchbinderanweisung"
+      ],
+      "Pages": "1 ungezähltes Blatt Tafel, 8 ungezählte Seiten, 582 Seiten, 21 ungezählte Seiten, 14 ungezählte Blätter Tafeln, 1 ungezähltes gefaltetes Blatt Tafel",
+      "Format": "4°",
+      "VD18_ID": "VD18 15045617"
+    },
+    {
+      "Title": "D. Johann Jacob Rambachs, Weyland Hochfürstl. Hessen-Darmstädtischen ersten Superintendenten und Professoris Theologiae Primarii in Gießen, Erläuterung über die Praecepta Homiletica",
+      "Author": "Rambach, Johann Jakob",
+      "Year": "1736",
+      "Genre": "Traktat",
+      "Pages": "[12] Bl., 306 S., [14] Bl.",
+      "Format": "4°",
+      "VD18_ID": "VD18 13566334"
+    },
+    {
+      "Title": "Der Betrachtung des Menschen, nach Geist, Seel und Leib Fernere Fortsetzung",
+      "Author": "Detry, Peter Friedrich",
+      "Year": "1736",
+      "Genre": "Traktat",
+      "Pages": "[2] Bl., 356 S.",
+      "Format": "8°",
+      "VD18_ID": "VD18 11428805"
+    }
+  ]
+},
+{
+  "id": "c03d32d5-f390-5770-904e-1c5b45f90dd3/t23",
+  "original_xml": "<ITEM>10. Bey Herrn Johann Rudolff Im Hoff dem Buchhändler allhier sind zu haben: <BIBL><TITLE>Eine neue Entrevue der Gespräche im Reich der Todten, zwischen denen letst-verstordenen Herzogen von Würten, berg; worinnen des Carl Alexanders Testament und leister Wille ausführlich, und dann auch des General von Rönichens Brief wegen vorgewesener Anderung begtiffen seynd</TITLE>, das Stuck vor <PRICE>3. Bz.</PRICE></BIBL> Item: <BIBL><TITLE>Curieuser Nachtichten. im Reich der Beschnittenen Erste Unterredung, zwischen Sabathi Sevi; einem in vorigem Seculo in den Morgenlän, deren, gewesenen Jüdischen Ertz-Betriegern; und den sameusen Würtenbergischen Avanturier, Jud Joseph suss Oppenheimer</TITLE>, worinnen dieser beeden beschnittenen Spit- Buden reben und Begebenheiten entdecket seynd, das Ezuck um <PRICE>4. Bz.</PRICE></BIBL></ITEM>",
+  "is_faulty": false,
+  "has_correction": false,
+  "corrected_xml": null,
+  "number_of_fixes": 0,
+  "fix_explanation": null,
+  "json_representation": {
+    "item": {
+      "bibl": [
+        {
+          "title": "Eine neue Entrevue der Gespräche im Reich der Todten, zwischen denen letst-verstordenen Herzogen von Würten, berg; worinnen des Carl Alexanders Testament und leister Wille ausführlich, und dann auch des General von Rönichens Brief wegen vorgewesener Anderung begtiffen seynd",
+          "price": "3. Bz."
+        },
+        {
+          "title": "Curieuser Nachtichten. im Reich der Beschnittenen Erste Unterredung, zwischen Sabathi Sevi; einem in vorigem Seculo in den Morgenlän, deren, gewesenen Jüdischen Ertz-Betriegern; und den sameusen Würtenbergischen Avanturier, Jud Joseph suss Oppenheimer",
+          "price": "4. Bz."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "quality_xml_well_formed": "TRUE",
+    "quality_error_message": "",
+    "quality_has_overlapping_tags": "FALSE",
+    "quality_tags_used": "BIBL, ITEM, PRICE, TITLE",
+    "quality_tag_counts": "{'ITEM': 1, 'BIBL': 2, 'TITLE': 2, 'PRICE': 2}",
+    "quality_summary": "OK",
+    "": ""
+  },
+   "VD18 request": [
+    {
+      "Title": "Neue Entrevue der Gespräche in dem Reich der Todten zwischen denen zwey letzt-verstorbenen regierenden Hertzogen v. Würtenberg, Herrn Eberhard Ludwig und Herrn Carl Alexander, höchst-rühmlichen Angedenckens",
+      "Author": "",
+      "Year": "1737",
+      "Genre": "customer__subjectform_Novelle",
+      "Pages": "80 S.",
+      "Format": "4",
+      "VD18_ID": "VD18 1221194X "
+   },
+   {
+    "Title": "Curieuser Nachrichten aus dem Reich der Beschnittenen ... Unterredung",
+    "Author": "Süß-Oppenheimer, Joseph",
+    "Year": "1737-1738",
+    "Genre": "Satire",
+    "Pages": "",
+    "Format": "4°",
+    "VD18_ID": "VD18 10786783"
+  }
+  ]
+},
+{
+  "id": "38d42ee8-e666-5978-befe-e12044e38c42/t15",
+  "original_xml": "<ITEM>44. <BIBL><AUTHOR>Gottfried Arnolds</AUTHOR> <TITLE>Evangel. Bottschaft</TITLE> gegen andern Büchern entweder zu vertauschen oder nach Belieben zu verkaufen</BIBL>, im Berichthaus zu erfragen.</ITEM>",
+  "is_faulty": false,
+  "has_correction": false,
+  "corrected_xml": null,
+  "number_of_fixes": 0,
+  "fix_explanation": null,
+  "json_representation": {
+    "item": {
+      "bibl": {
+        "author": "Gottfried Arnolds",
+        "title": "Evangel. Bottschaft"
+      }
+    }
+  },
+  "metadata": {
+    "quality_xml_well_formed": "TRUE",
+    "quality_error_message": "",
+    "quality_has_overlapping_tags": "FALSE",
+    "quality_tags_used": "AUTHOR, BIBL, ITEM, TITLE",
+    "quality_tag_counts": "{'ITEM': 1, 'BIBL': 1, 'AUTHOR': 1, 'TITLE': 1}",
+    "quality_summary": "OK",
+    "": ""
+  },
+  "VD18 request": [
+    {
+      "Title": "Die Evangelische Botschafft Der Herrlichkeit Gottes in Jesu Christo, nach denen ordentlichen Sonn- und Fest-Tags-Evangelien vorgetragen",
+      "Author": "Arnold, Gottfried",
+      "Year": "1718",
+      "Genre": "Predigt",
+      "Pages": "[4] Bl., 1234 [i.e. 1232], 238 S., [1] Bl.",
+      "Format": "4°",
+      "VD18_ID": ["VD18 1291732X", "VD18 12721565", "VD18 12608602"]
+   }
+  ]
+},
+{
+  "id": "0b414784-30b8-51a0-96b1-c3a66cf6d604/t11",
+  "original_xml": "<ITEM>34. Bey Herrn Daniel -Haag Buchbinder ist zu verkauffen : <BIBL><TITLE>LHistoire Ancienne</TITLE> par <AUTHOR>Mr- Rollin</AUTHOR>, <VOLUME>13. Tom.</VOLUME> à <PLACE>Paris</PLACE> <YEAR>1740</YEAR>. <FORMAT>8vò.</FORMAT></BIBL> <BIBL><TITLE>Romaine</TITLE> par <AUTHOR>Mr. Rollin</AUTHOR>, <VOLUME>7. Tom.</VOLUME> à <PLACE>Amsterd.</PLACE> <YEAR>1739</YEAR>. <FORMAT>8vò.</FORMAT></BIBL> <BIBL><AUTHOR>Lauffers</AUTHOR> <TITLE>Schweitzer- Histori</TITLE> <VOLUME>22. Theil</VOLUME> in <VOLUME>11. Bänden</VOLUME>, <PLACE>Zürich</PLACE> <YEAR>1736</YEAR>. <FORMAT>8vò.</FORMAT></BIBL> <BIBL><AUTHOR>Clausbergs</AUTHOR> <TITLE>Rechenkunst</TITLE> <VOLUME>2. Theil</VOLUME>, <PLACE>Leipzig</PLACE> <YEAR>1732</YEAR>. <FORMAT>8vò.</FORMAT></BIBL></ITEM>",
+  "is_faulty": false,
+  "has_correction": false,
+  "corrected_xml": null,
+  "number_of_fixes": 0,
+  "fix_explanation": null,
+  "json_representation": {
+    "item": {
+      "bibl": [ 
+      {
+        "author": "Mr- Rollin",
+        "title": "LHistoire Ancienne",
+        "volume": "13. Tom.",
+        "place": "Paris",
+        "year": "1740", 
+        "format": "8vò"
+      },
+      {
+        "author": "Mr. Rollin",
+        "title": "Romaine",
+        "volume": "7. Tom.",
+        "place": "Amsterd.",
+        "year": "1739", 
+        "format": "8vò"
+      },
+      {
+        "author": "Lauffers",
+        "title": "Schweitzer- Histori",
+        "volume":  [
+        "22. Theil",
+        "11. Bänden"
+      ],
+        "place": "Zürich",
+        "year": "1736", 
+        "format": "8vò"
+      },
+      {
+      "author": "Clausbergs",
+      "title": "Rechenkunst",
+      "volume": "2. Theil",
+      "place": "Leipzig",
+      "year": "1732", 
+      "format": "8vò"
+    }
+    ]
+    }
+  },
+  "metadata": {
+      "quality_xml_well_formed": "TRUE",
+      "quality_error_message": "",
+      "quality_has_overlapping_tags": "FALSE",
+      "quality_tags_used": "AUTHOR, BIBL, FORMAT, ITEM, PLACE, TITLE, VOLUME, YEAR",
+      "quality_tag_counts": "{'ITEM': 1, 'BIBL': 4, 'TITLE': 4, 'AUTHOR': 4, 'VOLUME': 5, 'PLACE': 4, 'YEAR': 4, 'FORMAT': 4}",
+      "quality_summary": "OK",
+      "": ""
+    },
+  "VD18 request": [
+    {
+      "Title": "Abregé De L'Histoire Ancienne",
+      "Author": "Rollin, Charles",
+      "Year": "1763",
+      "Genre": "",
+      "Pages": "",
+      "Format": "8°",
+      "VD18_ID": "VD18 12520543"
+   },
+   {
+    "Title": "Histoire Romaine Depuis La Fondation De Rome Jusqu'à La Bataille D'Actium: C'Est-A-Dire Jusqu'a La Fin De La République",
+    "Author": "Rollin, Charles",
+    "Year": "1753-1755",
+    "Genre": [
+      "Römisches Reich",
+      "Römerzeit",
+      "Italien",
+      "Geschichte"
+    ],
+    "Pages": "",
+    "Format": "",
+    "VD18_ID": "VD18 11165685"
+ },
+ {
+  "Title": "Historische und critische Beyträge zu der Historie der Eidsgenossen, bestehend in Urkunden, Zeugnissen und Untersuchungen ... vornehmlich mit Absicht auf das grosse Werck Jacob Lauffers zusammengetragen",
+  "Author": "",
+  "Year": "1739-1739",
+  "Genre": [
+    "Schweiz",
+    "Geschichte"
+  ],
+  "Pages": "",
+  "Format": "",
+  "VD18_ID": "VD18 90294599"
+},
+{
+  "Title": "C. von Clausbergs Demonstrative Rechenkunst, Oder Wissenschaft, gründlich und kurz zu rechnen",
+  "Author": "Clausberg, Christlieb, von",
+  "Year": "1748",
+  "Genre": [
+    "Mathematik",
+    "Rechenbuch"
+  ],
+  "Pages": "[1] gef. Bl., [22] Bl., 1096 S., Bl. 1097 - 1104, S. [1105] - 1472 : Ill. (Vign., Kupferst.)",
+  "Format": "8°",
+  "VD18_ID": "VD18 11109696"
+}
+  ]
+}
+]
