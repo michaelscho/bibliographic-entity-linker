@@ -24,7 +24,7 @@ class MatchDecision(typing.TypedDict):
     confidence: str
     reasoning: str
 
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.5-pro")
 
 # Params
 MIN_FTS_TOKEN_LEN = 3
@@ -332,7 +332,7 @@ PLACE:     {r[4]}
             return winner_id
             
     except Exception as e:
-        print(f"⚠️ LLM Error: {e}")
+        print(f"LLM Error: {e}")
         return None
         
     return None
