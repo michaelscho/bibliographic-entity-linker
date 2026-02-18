@@ -56,7 +56,7 @@ ABBREVIATIONS = {
     "phil": "philosophie", "bot": "botschaft",
 }
 
-# --- UTILS ---
+# Utils
 def db_sanity_check(db_path: Path):
     print(f"\nDIAGNOSTIC CHECK")
     if not db_path.exists():
@@ -186,7 +186,7 @@ def execute_run_1(conn, q_fts, strict_q, broad_q, query_year, norm_query_fuzz, q
     candidates.sort(key=lambda x: x["score"], reverse=True)
     return candidates
 
-# Run 2: hidden author + wide gap
+# Run 2
 def execute_run_2(conn, broad_q, query_year, norm_query_fuzz, query_author):
     if not broad_q or not query_year or not query_author: return []
     c = conn.cursor()
@@ -212,7 +212,7 @@ def execute_run_2(conn, broad_q, query_year, norm_query_fuzz, query_author):
                 out.append({"vd_id": vd_id, "vd_id_norm": normalize_db_vd_id(vd_id), "score": min(score, 100), "source": "RUN_2", "year": db_year, "title": db_title})
     return out
 
-# Run 3: Entity fallback
+# Run 3
 def execute_run_3(conn, broad_q, norm_query_fuzz, raw_query):
     if not broad_q: return []
     c = conn.cursor()
@@ -244,7 +244,7 @@ def execute_run_3(conn, broad_q, norm_query_fuzz, raw_query):
     out.sort(key=lambda x: x["score"], reverse=True)
     return out
 
-# Run 4: Rare terms
+# Run 4
 def execute_run_4(conn, norm_query_fts, norm_query_fuzz):
     tokens = [t for t in norm_query_fts.split() if len(t) >= 5 and t not in STOPWORDS]
     if not tokens: return []
@@ -330,7 +330,7 @@ PLACE:     {r[4]}
             return winner_id
             
     except Exception as e:
-        print(f"⚠️ LLM Error: {e}")
+        print(f"LLM Error: {e}")
         return None
         
     return None
