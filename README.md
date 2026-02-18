@@ -1,15 +1,14 @@
-# Robust Bibliographic Entity Linking (VD16/VD17/VD18)
+# Bibliographic Entity Linking (VD16/VD17/VD18)
 
-This repository contains a **hybrid Retrieve and Rank pipeline** designed to link noisy, OCR-degraded bibliographic strings from historical advertisements to canonical records in the VD16, VD17, and VD18 directories (Verzeichnis der im deutschen Sprachraum erschienenen Drucke).
+This repository contains a **hybrid Retrieve and Rank pipeline** designed to link noisy, OCR-degraded bibliographic strings from historical advertisements, such as the **Avisblatt**, to canonical records in the VD16, VD17, and VD18 directories (Verzeichnis der im deutschen Sprachraum erschienenen Drucke). It is meant as a proof of concept in the context of **Avisblatt** annotation and may need further adaption on other corpora.
 
-## Overview
+## Context and Motivation
+This tool was developed as a proof of concept for the annotation of the **Basler Avisblatt (1729–1844)**, a significant source for the early modern book market. As described in our research on scalable entity detection in 18th-century newspaper advertisements, the *Avisblatt* presents unique challenges:
+* **High Variance:** Advertisements range from professional publisher announcements to private sales and auctions.
+* **Data Quality:** Despite good OCR (CER < 1%), errors like character confusion (e.g., *Basel* vs. *Bafel*) and segmentation issues persist.
+* **Bibliographic Ambiguity:** Entries often lack standardized formatting, use abbreviated titles, or group multiple works in single blocks of text.
 
-Linking historical book advertisements to bibliographies is challenging due to:
-* **OCR Errors:** Characters are often misrecognized (e.g., `fameusen` → `sameusen`).
-* **Sparse Context:** Advertisements lack full bibliographic details.
-* **Non-Standard Input:** Abbreviations (`Evangel.`, `Hist.`) and archaic spelling.
-
-Standard RAG (Retrieval-Augmented Generation) systems often fail here because vector embeddings struggle with specific character-level noise or miss semantic context. This project solves this using a **deterministic multi-stage retrieval** followed by an **LLM-based reasoning step**.
+Standard RAG (Retrieval-Augmented Generation) systems often fail on this task because vector embeddings struggle with specific character-level noise or miss semantic context. This project solves this using a **deterministic multi-stage retrieval** followed by an **LLM-based reasoning step**, to map these non-standard, noisy references to the structured authority data of the VD18, serving as a downstream task following Named Entity Recognition (NER).
 
 ## Architecture
 
@@ -29,7 +28,9 @@ The top candidates (Top-N) are sent to a Large Language Model (**Gemini 2.5 Pro*
 * **Resolve Ambiguity:** Decides between multiple editions based on textual evidence when the date is missing or conflicting.
 * **Apply Preference Rules:** Prioritizes VD18 IDs over VD17 when applicable.
 
-## Data Source & Acknowledgments
+![Architecture](./bel-architecture.png)
+
+## Data Source and Acknowledgments
 
 The core metadata used to build the index is provided by the **Staatsbibliothek zu Berlin - Berlin State Library**. We gratefully acknowledge their work in curating and publishing the *Verzeichnis der im deutschen Sprachraum erschienenen Drucke*.
 
@@ -59,7 +60,7 @@ If you use this pipeline or the underlying data, please cite the original datase
 | `evaluation_multiple.py` | Runs the pipeline returning a ranked list of plausible candidates for ambiguous queries. |
 | `test_set.json` | A curated dataset of difficult historical queries with Ground Truth VD IDs. |
 
-## Installation & Requirements
+## Installation and Requirements
 
 The pipeline requires Python 3.9+ and the following dependencies:
 
@@ -86,7 +87,7 @@ python create_el_index.py
 *Output: `data/indices/vd18_fts.db`*
 
 ### 3. Evaluation
-Run the matching pipeline against the test set. Ensure you have your API key set.
+Run the matching pipeline against the test set. Ensure you have your API key set. Change code to adapt to other LLM provider.
 
 ```bash
 export GOOGLE_API_KEY="your_key_here"
@@ -105,3 +106,10 @@ You can adjust the pipeline behavior via environment variables or by modifying t
 * **Normalization:** All text is normalized to NFKD form, stripped of combining characters, lowercased, and cleaned of non-alphanumeric characters before indexing.
 * **VD18 Preference:** The logic explicitly prefers `vd18` prefixed IDs over `vd17` or `vd16` if the text match score is comparable, reflecting the project's focus on 18th-century prints.
 * **Date Handling:** While the system heavily penalizes date mismatches in strict mode, specific "fallback runs" allow for date discrepancies (e.g., matching a 1748 edition when the query asks for 1732) if the textual evidence is overwhelming.
+
+## Citation
+If you use this tool, please cite apropriatly.
+
+```bibtex
+
+```
