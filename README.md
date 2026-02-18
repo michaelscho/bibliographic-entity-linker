@@ -1,9 +1,9 @@
 # Bibliographic Entity Linking (VD16/VD17/VD18)
 
-This repository contains a **hybrid Retrieve and Rank pipeline** designed to link noisy, OCR-degraded bibliographic strings from historical advertisements, such as the **Avisblatt**, to canonical records in the VD16, VD17, and VD18 directories (Verzeichnis der im deutschen Sprachraum erschienenen Drucke). It is meant as a proof of concept in the context of **Avisblatt** annotation and may need further adaption on other corpora.
+This repository contains a **hybrid Retrieve and Rank pipeline** designed to link noisy, OCR-degraded bibliographic strings from book advertisements in historical newspapers to canonical records in the [VD16](https://bvbat01.bib-bvb.de/TP61/start.do?View=vd16&SearchType=2), [VD17](http://www.vd17.de/), and [VD18](https://vd18.gbv.de/viewer/index/) directories (Verzeichnisse der im deutschen Sprachraum erschienenen Drucke). It is meant as a proof of concept in the context of the annotation of the 18th century advertiser **Avisblatt** and may need further adaption for other corpora.
 
 ## Context and Motivation
-This tool was developed as a proof of concept for the annotation of the **Basler Avisblatt (1729–1844)**, a significant source for the early modern book market. As described in our research on scalable entity detection in 18th-century newspaper advertisements, the *Avisblatt* presents unique challenges:
+This tool was developed as a proof of concept for the annotation of the [**Basler Avisblatt (1729–1844)**](https://avisblatt.philhist.unibas.ch/), a significant source for the early modern book market in a Swiss town. As described in our research on scalable entity detection in 18th-century newspaper advertisements, the *Avisblatt* presents unique challenges:
 * **High Variance:** Advertisements range from professional publisher announcements to private sales and auctions.
 * **Data Quality:** Despite good OCR (CER < 1%), errors like character confusion (e.g., *Basel* vs. *Bafel*) and segmentation issues persist.
 * **Bibliographic Ambiguity:** Entries often lack standardized formatting, use abbreviated titles, or group multiple works in single blocks of text.
@@ -108,7 +108,7 @@ You can adjust the pipeline behavior via environment variables or by modifying t
 * **Date Handling:** While the system heavily penalizes date mismatches in strict mode, specific "fallback runs" allow for date discrepancies (e.g., matching a 1748 edition when the query asks for 1732) if the textual evidence is overwhelming.
 
 ## Citation
-If you use this tool, please cite apropriatly.
+If you use this tool, please cite appropriately.
 
 ```bibtex
 
