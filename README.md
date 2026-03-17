@@ -1,5 +1,7 @@
 # Bibliographic Entity Linking (VD16/VD17/VD18)
 
+[![DOI](https://zenodo.org/badge/1155285197.svg)](https://doi.org/10.5281/zenodo.19070753)
+
 This repository contains a **hybrid Retrieve and Rank pipeline** designed to link noisy, OCR-degraded bibliographic strings from book advertisements in historical newspapers to canonical records in the [VD16](https://bvbat01.bib-bvb.de/TP61/start.do?View=vd16&SearchType=2), [VD17](http://www.vd17.de/), and [VD18](https://vd18.gbv.de/viewer/index/) directories (Verzeichnisse der im deutschen Sprachraum erschienenen Drucke). It is meant as a proof of concept in the context of the annotation of the 18th century advertiser **Avisblatt** and may need further adaption for other corpora.
 
 ## Context and Motivation
@@ -118,5 +120,6 @@ If you use this tool, please cite appropriately.
   year         = 2026,
   publisher    = "GitHub",
   version      = "1.0.0",
-  url          = "https://github.com/michaelscho/bibliographic-entity-linker"
+  url          = "https://github.com/michaelscho/bibliographic-entity-linker",
+  doi          = "https://doi.org/10.5281/zenodo.19070753"
 ```
