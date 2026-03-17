@@ -112,12 +112,11 @@ If you use this tool, please cite appropriately.
 
 ```bibtex
   @software{bel_pipeline_2026,
-  author       = {Schonhart, Michael},
-  title        = {Bibliographic Entity Linking (VD16/VD17/VD18): A Hybrid Retrieve and Rank Pipeline for Bibliographic Records},
+  author       = "Schonhart, Michael",
+  title        = "Bibliographic Entity Linking (VD16/VD17/VD18): A Hybrid Retrieve and Rank Pipeline for Bibliographic Records",
   month        = mar,
   year         = 2026,
-  publisher    = {GitHub},
-  version      = {1.0.0},
-  url          = {https://github.com/michaelscho/bibliographic-entity-linker},
-}
+  publisher    = "GitHub",
+  version      = "1.0.0",
+  url          = "https://github.com/michaelscho/bibliographic-entity-linker"
 ```
